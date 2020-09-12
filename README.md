@@ -50,15 +50,3 @@ For each configuration, count how many quadrants are present. A configuration wi
 There are **1977980178440479560583296** buildable shapes. They amount to 99.999746% of all 33^16 shapes.
 
 48432 configurations out of all 65536 are buildable (73.9%). Configurations with more quadrants are more often buildable (13 quadrants and up always are) and contribute far more shapes, so impossible configurations correspond to relatively few shapes.
-
-## What are the impossible configurations?
-
-Examining the list of buildable and impossible configurations, there are 7 fundamental impossible configurations. A shape is impossible if and only if it contains one of these shapes. They are:
-
-1. Fully empty layer
-2. ![Single corner with a diagonal overhang](docs/impossible_shape_2_layers_diag.png)
-3. ![Single corner with an overhang on either side](docs/impossible_shape_2_layers_2_overhangs.png)
-4. ![Single corner with two overhangs on one side](docs/impossible_shape_2_layers_long_overhang.png)
-5. ![Single corner with three overhangs](docs/impossible_shape_2_layers_3_overhangs.png)
-6. !["Spiral staircase" with a single corner on each of 3 layers](docs/impossible_shape_3_layers_spiral.png)
-7. ![The same, but with two quadrants on the lowest layer](docs/impossible_shape_3_layers_full_side.png)
