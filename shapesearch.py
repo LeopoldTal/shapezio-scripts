@@ -84,6 +84,12 @@ class Shape: # A configuration of quadrants without shape-type / colour info
 			new_layers.append(merge_layers(into_layer, falling_layer))
 		
 		return to_short_key(new_layers)
+	
+	def flip(self): # not an in-game operation, used to compute unique impossible shapes
+		def flip_layer(layer):
+			return (layer[0], layer[3], layer[2], layer[1])
+		new_layers = [flip_layer(layer) for layer in self.layers]
+		return to_short_key(new_layers)
 
 def search_all_shapes():
 	with open('shapes.log', 'w') as log:
